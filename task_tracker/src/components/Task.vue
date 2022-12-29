@@ -1,9 +1,11 @@
 <template>
-    <h3 :calss="[task.reminder ? 'reminder':'', 'task']">
+  <div :class="[task.reminder ? 'reminder':'', 'task']">
+    <h3>
       {{ task.text }}
       <i class="fas fa-times"></i>
     </h3>
     <p>{{ task.day }}</p>
+  </div>
 </template>
 
 <script>
